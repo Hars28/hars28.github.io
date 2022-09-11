@@ -10,8 +10,6 @@
 .about{
     font-family: Montserrat;
     font-size: 35px;
-    border: 2px solid rgb(109, 94, 249);
-    height: 250px;
 }
 .image{
     height: 350px;
@@ -31,4 +29,51 @@
 .techLabel{
     font-family: Montserrat;
     font-size: 35px;
+}
+/* medium screen */
+@media only screen and (min-width: 421px) and (max-width: 780px) {
+    .home{
+        background-color: cornflowerblue;
+    
+    }
+    .main{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        
+    }
+    .about{
+        font-family: Montserrat;
+        font-size: 25px;
+        margin-top: 10px;
+    }
+    .image{
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        margin-top: 10px;
+    }
+    .techStacks{
+        border: 2px solid;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: auto;
+    }
+    .techStacks img{
+        height: 80px;
+        width: 80px;
+    }
+    .techLabel{
+        font-family: Montserrat;
+        font-size: 25px;
+    }
+}
+
+/* small screen */
+@media only screen and (min-width: 70px) and (max-width: 420px){
+    .about{
+        font-family: Montserrat;
+        font-size: 10px;
+        height: 100px;
+    }
 }
