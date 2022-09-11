@@ -1,0 +1,15 @@
+.link{
+    background-color: rgb(53, 89, 250);
+    color: white;
+}
+.nav{
+    display: flex;
+    font-family: Montserrat;
+    font-size: 25px;
+    justify-content: space-evenly;
+    background: linear-gradient(#e66465, #9198e5);
+}
+.foot{
+    background: linear-gradient(#e66465, #9198e5);
+    bottom: 0;
+}
