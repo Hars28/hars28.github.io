@@ -10,6 +10,8 @@
 .about{
     font-family: Montserrat;
     font-size: 35px;
+    text-align: justify ;
+
 }
 .image{
     height: 350px;
@@ -40,12 +42,14 @@
         display: flex;
         align-items: center;
         justify-content: space-evenly;
+        text-align: justify ;
         
     }
     .about{
         font-family: Montserrat;
         font-size: 25px;
         margin-top: 10px;
+        text-justify: center;
     }
     .image{
         height: 200px;
@@ -71,9 +75,41 @@
 
 /* small screen */
 @media only screen and (min-width: 70px) and (max-width: 420px){
+    .home{
+        background-color: cornflowerblue;
+    
+    }
+    .main{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: justify ;
+        
+    }
     .about{
         font-family: Montserrat;
-        font-size: 10px;
+        font-size: 20px;
+        margin-top: 10px;
+        text-justify: center;
+    }
+    .image{
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        margin-top: 10px;
+    }
+    .techStacks{
+        border: 2px solid;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+    }
+    .techStacks img{
         height: 100px;
+        width: 100px;
+    }
+    .techLabel{
+        font-family: Montserrat;
+        font-size: 25px;
     }
 }

@@ -19,10 +19,10 @@ const Navbar = () => {
           </div>
           </NavLink>
         <NavLink style={({ isActive }) => (isActive ? activeStyle : baseStyle)} to="/skills">
-          <div>My Skills</div>
+          <div>Skills</div>
           </NavLink>
-        <NavLink style={({ isActive }) => (isActive ? activeStyle : baseStyle)} to="/projects"><div>My Projects</div></NavLink>
-        <NavLink style={({ isActive }) => (isActive ? activeStyle : baseStyle)} to="/contacts"><div>Contact Me</div></NavLink>
+        <NavLink style={({ isActive }) => (isActive ? activeStyle : baseStyle)} to="/projects"><div>Projects</div></NavLink>
+        <NavLink style={({ isActive }) => (isActive ? activeStyle : baseStyle)} to="/contacts"><div>Contact</div></NavLink>
     </div>
   )
 }
