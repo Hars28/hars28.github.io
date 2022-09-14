@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    font-family: Montserrat;
+
+}
+.projects{
+}
+.img{
+    transition: transform .2s;
+    margin-top: 10px;
+
+}
+.img:hover{
+    transform: scale(1.1);
+    border: double;
+
+}
+.about{
+    font-family: Montserrat;
+    font-size: 25px;
+    text-align: justify ;
+}
+.project{
+    padding:10px;
+    border: 2px solid;
+}
+.link{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.link img{
+    width: 50px;
+    height: 50px;
+    
+}
+.link img:hover{
+    cursor: pointer;
+}
