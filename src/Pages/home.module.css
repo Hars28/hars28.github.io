@@ -1,3 +1,4 @@
+@media (min-width: 781px) {
 .home{
     height: 100vh;
 }
@@ -32,7 +33,7 @@
     font-family: Montserrat;
     font-size: 35px;
     
-}
+}}
 /* medium screen */
 @media only screen and (min-width: 421px) and (max-width: 780px) {
     .home{
@@ -77,10 +78,9 @@
 
 /* small screen */
 @media only screen and (min-width: 70px) and (max-width: 420px){
-    .home{
-        background-color: rgb(66, 6, 121);
-    
-    }
+    /* .home{
+        height: 100vh;
+    } */
     .main{
         display: flex;
         align-items: center;

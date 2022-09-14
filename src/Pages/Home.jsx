@@ -42,7 +42,7 @@ I love to work on exciting projects that test what I've learnt, whilst being exp
     </div>
     <h2 className={Styles.techLabel}>TECH STACKS</h2>
     <div className={Styles.techStacks}>
-      {data.map((e=><div style={{display:"flex",flexDirection:"column",alignItems:"center",marginTop:"10px"}}>
+      {data.map((e=><div key={e.img} style={{display:"flex",flexDirection:"column",alignItems:"center",marginTop:"10px"}}>
         <img src={e.img} alt={e.img}/>
         <h3>{e.name}</h3>        
       </div>))}
