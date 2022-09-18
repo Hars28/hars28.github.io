@@ -1,11 +1,14 @@
+.techLabel{
+    color: aliceblue;
+}
 @media (min-width: 781px) {
 .home{
-    height: 100vh;
 }
 .main{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    gap: 20px;
 }
 .about{
     font-family: Montserrat;
@@ -37,15 +40,13 @@
 /* medium screen */
 @media only screen and (min-width: 421px) and (max-width: 780px) {
     .home{
-        height: 100vh;
-
     }
     .main{
         display: flex;
         align-items: center;
         justify-content: space-evenly;
         text-align: justify ;
-        
+        gap: 10px;    
     }
     .about{
         font-family: Montserrat;
@@ -64,6 +65,7 @@
         display: grid;
         grid-template-columns: repeat(3,1fr);
         grid-template-rows: auto;
+        
     }
     .techStacks img{
         height: 80px;

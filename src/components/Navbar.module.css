@@ -5,7 +5,6 @@
 .nav{
     display: flex;
     font-family: Montserrat;
-    font-size: 25px;
     justify-content: space-evenly;
     background: linear-gradient(#e66465, #9198e5);
 }

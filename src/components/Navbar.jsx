@@ -14,15 +14,15 @@ const Navbar = () => {
   return (
     <div className={Styles.nav}>
         <NavLink style={({ isActive }) => (isActive ? activeStyle : baseStyle)} to="/">
-          <div >
+          <h1 >
             Home
-          </div>
+          </h1>
           </NavLink>
         <NavLink style={({ isActive }) => (isActive ? activeStyle : baseStyle)} to="/skills">
-          <div>Skills</div>
+          <h1>Skills</h1>
           </NavLink>
-        <NavLink style={({ isActive }) => (isActive ? activeStyle : baseStyle)} to="/projects"><div>Projects</div></NavLink>
-        <NavLink style={({ isActive }) => (isActive ? activeStyle : baseStyle)} to="/contacts"><div>Contact</div></NavLink>
+        <NavLink style={({ isActive }) => (isActive ? activeStyle : baseStyle)} to="/projects"><h1>Projects</h1></NavLink>
+        <NavLink style={({ isActive }) => (isActive ? activeStyle : baseStyle)} to="/contacts"><h1>Contact</h1></NavLink>
     </div>
   )
 }

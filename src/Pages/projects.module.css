@@ -3,17 +3,23 @@
     font-family: Montserrat;
 
 }
+.about{
+    color: aliceblue;
+}
+.techLabel{}
+@media only screen and (min-width: 781px){
 .projects{
 }
-.img{
+.Pimg{
     transition: transform .2s;
     margin-top: 10px;
-    width:600px;
-    height:300px;
+    width:800px;
+    height:350px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    padding: 10px;
+
 }
-.img:hover{
+.Pimg:hover{
     transform: scale(1.1);
-    border: double;
 
 }
 .about{
@@ -24,28 +30,184 @@
 .project{
     padding:10px;
     border: 2px solid;
+    width: 98%;
 }
 .link{
     margin-top: 10px;
     display: flex;
     justify-content: space-evenly;
 }
+.techDiv{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+   
+}
+.techImg{
+    height: 50px;
+    width: 50px;
+    transition: transform 1s ease-in-out;
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    padding: 10px;
+
+}
+.techImg:hover{
+    transform: rotate(360deg);
+    cursor :pointer;
+}
 .link img{
     width: 50px;
     height: 50px;
-    
+    border-radius: 50%;
+    transition: transform .2s;
+    outline: 5px solid black;
+    outline-offset: -4px;
 }
+
 .link img:hover{
     cursor: pointer;
+    transform: scale(1.1);
 }
-@media only screen and (min-width: 70px) and (max-width: 420px){
-    .img{
-        height: 200px;
-        width: 300px;
+}
+@media only screen and (min-width: 421px) and (max-width: 780px) {
+    .projects{
+        margin-top: 10px;
+    }
+    .Pimg{
+        transition: transform .2s;
+        margin-top: 10px;
+        width: 400px;;
+        height:300px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    padding: 10px;
+    
+    }
+    .Pimg:hover{
+        transform: scale(1.1);
+    
     }
     .about{
         font-family: Montserrat;
         font-size: 20px;
         text-align: justify ;
+    }
+    .project{
+        padding:10px;
+        border: 2px solid;
+    }
+    .link{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .techDiv{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    
+    }
+    .techImg{
+        height: 50px;
+        width: 50px;
+        transition: transform 1s ease-in-out;
+        margin-bottom: 20px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    padding: 10px;
+    
+    }
+    .techImg:hover{
+        transform: rotate(360deg);
+        cursor :pointer;
+    }
+    .link img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        transition: transform .2s;
+        outline: 5px solid black;
+        outline-offset: -4px;
+    }
+    
+    .link img:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+}
+
+@media only screen and (min-width: 70px) and (max-width: 420px){
+    .Pimg{
+        height: 200px;
+        width: 300px;
+        transition: transform .2s;
+        margin-top: 10px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    padding: 10px;
+    }
+    
+    .about{
+        font-family: Montserrat;
+        font-size: 20px;
+        text-align: justify ;
+    }
+    .techImg{
+        transition: transform 1s ease-in-out;
+        margin-bottom: 20px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    padding: 10px;
+
+    }
+    .techImg:hover{
+        transform: rotate(360deg);
+        cursor :pointer;
+    }
+    .projects{
+    }
+    .Pimg:hover{
+        transform: scale(1.1);
+    
+    }
+    .about{
+        font-family: Montserrat;
+        font-size: 25px;
+        text-align: justify ;
+    }
+    .project{
+        padding:10px;
+        border: 2px solid;
+    }
+    .link{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .techDiv{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    
+    }
+    .techImg{
+        height: 50px;
+        width: 50px;
+        transition: transform 1s ease-in-out;
+        margin-bottom: 20px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    padding: 10px;
+    
+    }
+    .techImg:hover{
+        transform: rotate(360deg);
+        cursor :pointer;
+    }
+    .link img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        transition: transform .2s;
+        outline: 5px solid black;
+        outline-offset: -4px;
+    }
+    
+    .link img:hover{
+        cursor: pointer;
+        transform: scale(1.1);
     }
 }
