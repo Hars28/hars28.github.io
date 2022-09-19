@@ -1,9 +1,6 @@
 .App {
   text-align: center;
-background: -webkit-linear-gradient(360deg, #b6eae1 10%, #D2FBAD 360%);
-background: -moz-linear-gradient(360deg, #b6eae1 10%, #D2FBAD 360%);
-background: linear-gradient(360deg, #b6eae1 10%, #D2FBAD 360%);
- padding: 5px;
+
 }
 
 .App-logo {

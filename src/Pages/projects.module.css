@@ -1,15 +1,25 @@
 *{
     margin: 0;
-    font-family: Montserrat;
+    font-family: 'Josefin Sans', sans-serif;
 
 }
+
 .aboutT{
     max-width: 80%;
     margin: auto;
+    /* font-weight: bolder; */
+}
+.projects{
+    background-image: linear-gradient(to top, #dbdcd7 0%, #dddcd7 24%, #e2c9cc 30%, #e7627d 46%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%);
 }
 .techLabel{}
 @media only screen and (min-width: 781px){
 .projects{
+}
+.tU{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
+    margin-top: 25px;
 }
 .Pimg{
     transition: transform .2s;
@@ -24,7 +34,7 @@
 
 }
 .aboutT{
-    font-family: Montserrat;
+    font-family: 'Roboto', sans-serif;
     font-size: 30px;
     text-align: justify ;
     max-width: 80%;
@@ -68,7 +78,6 @@
     outline-offset: -4px;
 }
 .pr{
-    margin-top: 30px;
     margin-bottom: 15px;
     color: black;
 }
@@ -80,7 +89,6 @@
 }
 @media only screen and (min-width: 421px) and (max-width: 780px) {
     .projects{
-        margin-top: 10px;
     }
     .Pimg{
         transition: transform .2s;

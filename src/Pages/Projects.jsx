@@ -29,14 +29,16 @@ const projects=[
 const Projects = () => {
   return (
     <div className={Styles.projects}>
-      <h1 className={Styles.pr}>MY PROJECTS</h1>
+          <h1 >
+            MY PROJECTS
+          </h1>
       {projects.map((item)=>
       <div key={item.src} className={Styles.project}>
         <h2 style={{color:"rgb(4, 52, 94)"}}>{item.name}</h2>
         <img className={Styles.Pimg} src={item.src} alt={item.name} />
-        <h2 style={{marginBottom:"10px",marginTop:"25px",marginBottom:"10px",color:"rgb(4, 52, 94)"}}>ABOUT</h2>
+        <br/>
         <div className={Styles.aboutT}>{item.desc}</div>
-        <h2 style={{marginTop:"30px",color:"rgb(4, 52, 94)"}}>TECHNOLOGIES USED</h2>
+        <h2 className={Styles.tU}>TECHNOLOGIES USED</h2>
         <div className={Styles.techDiv}>
         {item.tech.map((item)=><img key={item} className={Styles.techImg} src={item} alt="project"/>)}
         </div>
@@ -49,6 +51,8 @@ const Projects = () => {
           </a>
         </div>
       </div>)}
+      <h2 style={{color:"black",marginTop:"10px"}}>CONTACT</h2>
+
     </div>
   )
 }

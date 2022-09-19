@@ -1,42 +1,62 @@
 .techLabel{
     color: rgb(4, 52, 94);
 }
+.main{
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    
+}
+.home{
+    background-image: linear-gradient(to top, #dbdcd7 0%, #dddcd7 24%, #e2c9cc 30%, #e7627d 46%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%);}
+*{
+    font-family: 'Josefin Sans', sans-serif;
 
+}
 @media (min-width: 781px) {
     .resume{
         font-size: 25px;
     }
+    .sft{
+        margin-top: 20px;
+        font-size: 25px;
+        
+            }
 .main{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     gap: 20px;
+    max-width: 80%;
+    border-radius: 30px;
+    margin: auto;
+    color: aliceblue;
 }
 .about1{
-    font-family: Montserrat;
-    font-size: 35px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
     text-align: justify ;
-
+  
 }
 .image{
-    height: 350px;
-    width: 350px;
-    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    margin: -75px 0 0 0
 }
+
+
 .techStacks{
-    border: 2px solid;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: auto;
-    padding: 10px;
+    max-width: 80%;
+    margin: auto;
 }
 .techStacks img{
-    height: 100px;
-    width: 100px;
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
 }
 .techLabel{
-    font-family: Montserrat;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 35px;
     margin-top: 20px;
     margin-bottom: 10px;
@@ -45,6 +65,10 @@
 /* medium screen */
 @media only screen and (min-width: 421px) and (max-width: 780px) {
     .home{
+    }
+    .sft{
+        margin-top: 20px;
+        font-size: 25px;
     }
     .main{
         display: flex;
@@ -66,20 +90,19 @@
         margin-top: 10px;
     }
     .techStacks{
-        border: 2px solid;
         display: grid;
         grid-template-columns: repeat(3,1fr);
         grid-template-rows: auto;
         
     }
     .techStacks img{
-        height: 80px;
-        width: 80px;
+        height: 45px;
+        width: 45px;
         border-radius: 50%;
 
     }
     .techLabel{
-        font-family: Montserrat;
+        font-family: 'Josefin Sans', sans-serif;
         font-size: 30px;
         margin-top: 25px;
         margin-bottom: 15px;    }
@@ -97,12 +120,17 @@
         text-align: justify ;
         
     }
+    .sft{
+        margin-top: 20px;
+        font-size: 25px;
+    }
     .about1{
         font-family: Montserrat;
         font-size: 25px;
         margin-top: 10px;
         text-justify: center;
     }
+    
     .image{
         height: 200px;
         width: 200px;
@@ -110,19 +138,18 @@
         margin-top: 10px;
     }
     .techStacks{
-        border: 2px solid;
         display: grid;
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: auto;
     }
     .techStacks img{
-        height: 100px;
-        width: 100px;
+        height: 50px;
+        width: 40px;
         border-radius: 50%;
 
     }
     .techLabel{
-        font-family: Montserrat;
+        font-family: 'Josefin Sans', sans-serif;
         font-size: 25px;
         margin-top: 20px;
         margin-bottom: 10px;

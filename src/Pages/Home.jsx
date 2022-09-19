@@ -31,7 +31,7 @@ const Home = () => {
     <div className={Styles.home}>
     <div className={Styles.main}>
       <div>
-        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAHcAdwMBIgACEQEDEQH/xAAbAAEAAwEBAQEAAAAAAAAAAAAABAUGAwIBB//EADgQAAICAQICBQgIBwAAAAAAAAABAgMEBRExQRIhUWFxBhMiI0KB0eEUMlJykaGx8BU0NVRic8H/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A/cQAAAAAA+b7AfQRrM/Eq+vkVp9nS3Zy/i+B/cx/B/ACcCPVm4tzSrvrk3yUluSAAAAAAAAAAAAB9SDexmNZ1aV8pY+NLaldUpL2/kBO1DXa6W68VKya4zf1V8ShyczJym/P2ykvs77Je44AAAAPhLxdQysV+qtfR+xLrRFAGp03Wqcpqu31Vr4Jvql4P/hamBL/AETVm5RxcqXHqrm/0YF+AAAAAABgU3lFnOmlY1b9Oxbya5R+Zmjvn5Dysu27lKXo+HI4AACRgYksy9Vxey4yl2IDhCE7JKNcZSk+UVuzv9Ay0t/o9m3gafHx6satQpgorm+bOoGLknFtSTTXFMGszMOnLh0bY+l7M1xRl8mieNfKmz60Xx7e8DmAANZoec8zF6Nj3tr6pd65MsjIaJkfR9Rr3fo2ehL38Pz2NeAAAAjalZ5rAvmuKg9iSQdb/peR91fqgMeAABf+T1aWLZZt1yntv3JfNlAXvk7cnTbT7UZdL3MC3AAApPKOtKVFm3W04v8AfvZdlD5RWqVtVKfXCO794FSAACbi1KPFdaN5XJTrjNcJJMwZuMP+Uo/1x/QDsAABHz6/PYV9aW7lBpeOxIAGBBK1PGeLnW1ezv0o+DIoA6Y188a6NtT2kvz7jmk5NKKbb4JFxh6JKSU8qTj/AIR4+9gWGJqWPlJJTULOcJPb8O0mdSW7fV2lZfomNNepcqn49JP8SP8AwF77PIW33PmBLzdVpx4uNUlbbySfUvFmdsnK2yVlj3nJ7t9poKtFxIQas6dknzcttvDYg5ujWUpzx27IL2dvSXxAqwAB9hF2TjCPGTUV7zeQiowUVwS2MpoGN5/UIya9CpdJ+PJfvsNYAAAAAAVWvYDysdW1Le2vkvaXNGVN+VV+j1yz45MNlFPpTr24vtQHDSNPWNWrrV66S5+wviWQAAAAAABT61p6cZZNC2a65xXPvKSMXKSjFNtvZJGz236ttyLp+kV4uRO+W0pbvza+wviB30nC+hYqi9vOS9Kb7+wmgAAAAAAAAAeJ1qXczk4SXIkACKCTsuwdFdiAjHuNcn3HfYAeYwUT0AAAAAAAAAAAAAAAAAAAAAAAAAAAAH//2Q==" className={Styles.image} alt="Profile-Pic"/>
+        <img src="https://i.ibb.co/yYtQGyD/IMG-20220904-202325-removebg-preview-1.png" className={Styles.image} alt="Profile-Pic"/>
       </div>
       <div>
         <div className={Styles.about1}>
@@ -40,13 +40,15 @@ I love to work on exciting projects that test what I've learnt, whilst being exp
         </div>
       </div>
     </div>
-    <h2 className={Styles.techLabel}>TECH STACKS</h2>
+    <h2 className={Styles.techLabel}>Some of the tech stacks that i've learned</h2>
     <div className={Styles.techStacks}>
-      {data.map((e=><div key={e.img} style={{display:"flex",flexDirection:"column",alignItems:"center",marginTop:"10px"}}>
+      {data.map((e=><div key={e.img} style={{display:"flex",alignItems:"center",marginTop:"10px"}}>
         <img src={e.img} alt={e.img}/>
-        <h3>{e.name}</h3>        
+        <h3 style={{marginLeft:"20px"}}>{e.name}</h3>        
       </div>))}
     </div>
+    <h2 className={Styles.sft}>SOFT SKILLS</h2>
+
     </div>
   )
 }

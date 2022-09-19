@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+*{
+
+}
+.contacts{
+    background-image: linear-gradient(to top, #dbdcd7 0%, #dddcd7 24%, #e2c9cc 30%, #e7627d 46%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%);
+}
 @media (min-width: 781px) {
     .contacts{
     display: grid;
@@ -68,7 +76,7 @@ img{
         transition: transform .2s;
     }
     .text1{
-        font-family: Montserrat;
+        font-family: 'Josefin Sans', sans-serif;
     }
     .text:hover{
         transform: scale(1.1);
