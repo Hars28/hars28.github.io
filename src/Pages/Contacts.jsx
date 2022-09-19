@@ -4,7 +4,7 @@ import Styles from "./contacts.module.css"
 const Contacts = () => {
   return (
     <div>
-      <h1>Contact Me</h1>
+      <h1 style={{color:"black",marginTop:"10px"}}>CONTACT</h1>
       <div className={Styles.contacts}>
         <div className={Styles.contact}>
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt75aZzf58_Ni304EB_UDtyoXzqz0Z34FFPw&usqp=CAU" alt="mobile" className={Styles.mobile}/>

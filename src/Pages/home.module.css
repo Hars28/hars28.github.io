@@ -1,16 +1,18 @@
 .techLabel{
-    color: aliceblue;
+    color: rgb(4, 52, 94);
 }
+
 @media (min-width: 781px) {
-.home{
-}
+    .resume{
+        font-size: 25px;
+    }
 .main{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     gap: 20px;
 }
-.about{
+.about1{
     font-family: Montserrat;
     font-size: 35px;
     text-align: justify ;
@@ -31,10 +33,13 @@
 .techStacks img{
     height: 100px;
     width: 100px;
+    border-radius: 50%;
 }
 .techLabel{
     font-family: Montserrat;
     font-size: 35px;
+    margin-top: 20px;
+    margin-bottom: 10px;
     
 }}
 /* medium screen */
@@ -48,7 +53,7 @@
         text-align: justify ;
         gap: 10px;    
     }
-    .about{
+    .about1{
         font-family: Montserrat;
         font-size: 25px;
         margin-top: 10px;
@@ -70,12 +75,14 @@
     .techStacks img{
         height: 80px;
         width: 80px;
+        border-radius: 50%;
+
     }
     .techLabel{
         font-family: Montserrat;
-        font-size: 25px;
-        margin-top: 60px;
-    }
+        font-size: 30px;
+        margin-top: 25px;
+        margin-bottom: 15px;    }
 }
 
 /* small screen */
@@ -90,9 +97,9 @@
         text-align: justify ;
         
     }
-    .about{
+    .about1{
         font-family: Montserrat;
-        font-size: 20px;
+        font-size: 25px;
         margin-top: 10px;
         text-justify: center;
     }
@@ -111,9 +118,13 @@
     .techStacks img{
         height: 100px;
         width: 100px;
+        border-radius: 50%;
+
     }
     .techLabel{
         font-family: Montserrat;
         font-size: 25px;
+        margin-top: 20px;
+        margin-bottom: 10px;
     }
 }

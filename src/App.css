@@ -1,9 +1,9 @@
 .App {
   text-align: center;
-background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
-color: antiquewhite;
-  padding: 5px;
+background: -webkit-linear-gradient(360deg, #b6eae1 10%, #D2FBAD 360%);
+background: -moz-linear-gradient(360deg, #b6eae1 10%, #D2FBAD 360%);
+background: linear-gradient(360deg, #b6eae1 10%, #D2FBAD 360%);
+ padding: 5px;
 }
 
 .App-logo {
