@@ -86,7 +86,6 @@
     .image{
         height: 200px;
         width: 200px;
-        border-radius: 50%;
         margin-top: 10px;
     }
     .techStacks{
@@ -132,9 +131,8 @@
     }
     
     .image{
-        height: 200px;
-        width: 200px;
-        border-radius: 50%;
+        height: 150px;
+        width: 150px;
         margin-top: 10px;
     }
     .techStacks{
