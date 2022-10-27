@@ -1,4 +1,5 @@
 import React from 'react'
+import Calendar from '../components/calender'
 import Styles from "./projects.module.css"
 const projects=[
   {
@@ -51,7 +52,9 @@ const Projects = () => {
           </a>
         </div>
       </div>)}
-      <h2 style={{color:"black",marginTop:"10px"}}>CONTACT</h2>
+      <Calendar/>
+      <h2 style={{color:"black",marginTop:"10px"}}
+      >CONTACT</h2>
 
     </div>
   )

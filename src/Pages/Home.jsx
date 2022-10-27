@@ -29,7 +29,7 @@ const data=[
 const Home = () => {
   return (
     <div className={Styles.home}>
-    <div className={Styles.main}>
+      <div className={Styles.main}>
       <div>
         <img src="https://i.ibb.co/yYtQGyD/IMG-20220904-202325-removebg-preview-1.png" className={Styles.image} alt="Profile-Pic"/>
       </div>

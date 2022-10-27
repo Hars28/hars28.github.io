@@ -7,6 +7,7 @@ import Home from './Pages/Home';
 import Skills from './Pages/Skills';
 import Projects from './Pages/Projects';
 import Contacts from './Pages/Contacts';
+import Calendar from './components/calender';
 
 function App() {
   return (
