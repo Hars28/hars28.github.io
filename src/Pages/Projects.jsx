@@ -1,6 +1,16 @@
 import React from 'react'
 import Calendar from '../components/calender'
 import Styles from "./projects.module.css"
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { Pagination, Navigation } from "swiper";
+import "./styles.css";
+import Project from '../components/Project';
+
 const projects=[
   {
     name:"BEST BUY-CLONE",
@@ -30,31 +40,34 @@ const projects=[
 const Projects = () => {
   return (
     <div className={Styles.projects}>
-          <h1 >
+      
+          <p className={Styles.sft}>
             MY PROJECTS
-          </h1>
-      {projects.map((item)=>
-      <div key={item.src} className={Styles.project}>
-        <h2 style={{color:"rgb(4, 52, 94)"}}>{item.name}</h2>
-        <img className={Styles.Pimg} src={item.src} alt={item.name} />
-        <br/>
-        <div className={Styles.aboutT}>{item.desc}</div>
-        <h2 className={Styles.tU}>TECHNOLOGIES USED</h2>
-        <div className={Styles.techDiv}>
-        {item.tech.map((item)=><img key={item} className={Styles.techImg} src={item} alt="project"/>)}
-        </div>
-        <div className={Styles.link}>
-          <a href={item.git}>
-          <img src="data:image/png;base64,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" alt="github"/>
-          </a>
-          <a href={item.netlify}>
-          <img src="data:image/png;base64,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" alt="netlify"/>
-          </a>
-        </div>
-      </div>)}
+          </p>
+          <Swiper
+          
+        pagination={{
+          type: "progressbar",
+        }}
+        navigation={true}
+        modules={[Pagination, Navigation]}
+        className="mySwiper"
+      >
+      
+        <SwiperSlide>
+          <Project item={projects[0]}/>
+        </SwiperSlide>
+        <SwiperSlide>
+        <Project item={projects[1]}/>
+        </SwiperSlide>
+        <SwiperSlide>
+        <Project item={projects[2]}/>
+        </SwiperSlide>
+        
+      </Swiper>
+     
       <Calendar/>
-      <h2 style={{color:"black",marginTop:"10px"}}
-      >CONTACT</h2>
+      
 
     </div>
   )

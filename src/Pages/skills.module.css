@@ -5,13 +5,15 @@
     
 }
 .skills{
-    background-image: linear-gradient(to top, #dbdcd7 0%, #dddcd7 24%, #e2c9cc 30%, #e7627d 46%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%);        display: grid;
+            display: grid;
 
 }
 *{
+    font-family: 'Josefin Sans', sans-serif;
 
 }
 @media only screen and (min-width: 781px) {
+    
     .skills{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
@@ -36,6 +38,11 @@
             border-radius: 25px;
 
         }
+        .sft{
+            font-family: Montserrat;
+            font-size: 40px;
+            font-weight: bolder;
+        }
 }
 
 @media only screen and (min-width: 421px) and (max-width: 780px) {
@@ -45,25 +52,30 @@
         grid-template-rows: auto;
         gap: 20px;
         padding: 20px;
+        border: 2px solid;
+
         }
         
         .skill{
             
             margin: auto;
-            height: 160px;
+            height: 180px;
             width: 200px;
             padding: 15px;
-            border-radius: 10px;
+            border-radius: 25px;
             font-size: 15px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    padding: 10px;
+
         }
         .sft{
             font-family: Montserrat;
             font-size: 30px;
-            
+            font-weight: bolder;
         }
         .skill img{
             height: 150px;
             width: 180px;
+            border-radius: 25px;
         }
 }
 
@@ -71,7 +83,7 @@
     .sft{
         font-family: Montserrat;
         font-size: 25px;
-       
+        font-weight: bolder;
     }
     .skills{
         display: grid;
@@ -89,9 +101,11 @@
             margin-top: 10px;
             margin-bottom: 10px;
             font-size: 15px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    padding: 10px;
+
         }
         .skill img{
-            height: 120px;
-            width: 150px;
+            height: 130px;
+            width: 180px;
         }
 }

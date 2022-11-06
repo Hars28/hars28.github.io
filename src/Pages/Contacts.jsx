@@ -3,7 +3,8 @@ import Styles from "./contacts.module.css"
 
 const Contacts = () => {
   return (
-    <div>
+    <div >
+      <p className={Styles.sft}>CONTACT</p>
       <div className={Styles.contacts}>
         <div className={Styles.contact}>
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt75aZzf58_Ni304EB_UDtyoXzqz0Z34FFPw&usqp=CAU" alt="mobile" className={Styles.mobile}/>

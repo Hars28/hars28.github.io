@@ -5,13 +5,20 @@
     background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
     
 }
-.home{
-    background-image: linear-gradient(to top, #dbdcd7 0%, #dddcd7 24%, #e2c9cc 30%, #e7627d 46%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%);}
+
 *{
     font-family: 'Josefin Sans', sans-serif;
 
 }
 @media (min-width: 781px) {
+    .tname{
+        font-family: 'Roboto', sans-serif;
+        font-size: 25px;
+        margin-left: 20px;
+        font-weight: bolder;
+        color: black
+    }
+    
     .resume{
         font-size: 25px;
     }
@@ -23,23 +30,20 @@
 .main{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    max-width: 80%;
-    border-radius: 30px;
     margin: auto;
+    flex-direction: column;
     color: aliceblue;
+    justify-content: space-between;
+
 }
 .about1{
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 25px;
+    font-size: 50px;
     text-align: justify ;
-  
 }
 .image{
     height: 300px;
     width: 300px;
-    margin: -75px 0 0 0
 }
 
 
@@ -64,7 +68,22 @@
 }}
 /* medium screen */
 @media only screen and (min-width: 421px) and (max-width: 780px) {
-    .home{
+    .tname{
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        margin-left: 15px;
+        font-weight: bolder;
+        color: black
+    }
+    .profile{
+    border-radius: 50%;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:250px;
+    width: 200px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    padding: 10px;
+    margin: auto;
     }
     .sft{
         margin-top: 20px;
@@ -73,20 +92,24 @@
     .main{
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 20px;
         text-align: justify ;
-        gap: 10px;    
+        color: aliceblue;
+        border: 5px solid;
     }
     .about1{
         font-family: Montserrat;
-        font-size: 25px;
+        font-size: 40px;
         margin-top: 10px;
-        text-justify: center;
+        text-justify: auto;
     }
     .image{
-        height: 200px;
+        height: 250px;
         width: 200px;
-        margin-top: 10px;
+        border-radius: 50%;    
+
     }
     .techStacks{
         display: grid;
@@ -95,8 +118,8 @@
         
     }
     .techStacks img{
-        height: 45px;
-        width: 45px;
+        height: 40px;
+        width: 40px;
         border-radius: 50%;
 
     }
@@ -109,15 +132,29 @@
 
 /* small screen */
 @media only screen and (min-width: 70px) and (max-width: 420px){
-    /* .home{
-        height: 100vh;
-    } */
+    .tname{
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        margin-left: 10px;
+        font-weight: bolder;
+        color: black
+    }
+    .profile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* width:370px;
+        height:200px; */
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    padding: 10px;
+        margin: auto;
+        }
     .main{
         display: flex;
         align-items: center;
         flex-direction: column;
         text-align: justify ;
-        
+        color: aliceblue;
+
     }
     .sft{
         margin-top: 20px;
@@ -125,15 +162,15 @@
     }
     .about1{
         font-family: Montserrat;
-        font-size: 25px;
+        font-size: 40px;
         margin-top: 10px;
         text-justify: center;
     }
     
     .image{
-        height: 150px;
+        /* height: 150px;
         width: 150px;
-        margin-top: 10px;
+        margin-top: 10px; */
     }
     .techStacks{
         display: grid;
@@ -141,8 +178,8 @@
         grid-template-rows: auto;
     }
     .techStacks img{
-        height: 50px;
-        width: 40px;
+        height: 30px;
+        width: 30px;
         border-radius: 50%;
 
     }

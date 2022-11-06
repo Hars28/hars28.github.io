@@ -1,12 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
 *{
+    font-family: 'Josefin Sans', sans-serif;
 
 }
-.contacts{
-    background-image: linear-gradient(to top, #dbdcd7 0%, #dddcd7 24%, #e2c9cc 30%, #e7627d 46%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%);
+.sft{
+    font-family: 'Josefin Sans', sans-serif;
+
+    color:rgb(4, 52, 94)
+    
 }
+
 @media (min-width: 781px) {
+    .sft{
+        font-family: Montserrat;
+        font-size: 40px;
+        font-weight: bolder;
+    }
     .contacts{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -16,24 +26,30 @@
     
 }
 .contact{
-    width:400px;
+    width:370px;
     height:200px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    padding: 10px;
     margin: auto;
 }
-img{
-    
-}
+
 .a{
     color: blue;
 }
 .text{
-    font-family: Montserrat;
-    font-size: 200 px;
-    transition: transform .2s;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    text-align: center ;
+    margin: auto;
+    font-weight: bolder;
+    color: black
 }
 .text1{
-    font-family: Montserrat;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    text-align: center ;
+    margin: auto;
+    font-weight: bolder;
+    
 }
 .text:hover{
     transform: scale(1.1);
@@ -44,12 +60,18 @@ img{
     height: 100px;
     width: 100px;
     border-radius: 50%;
+    margin: auto;
     outline: 5px solid black;
     outline-offset: -4px;
 }
 
 }
 @media only screen and (min-width: 421px) and (max-width: 780px) {
+    .sft{
+        font-family: Montserrat;
+        font-size: 25px;
+        font-weight: bolder;
+    }
     .contacts{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -59,7 +81,7 @@ img{
         
     }
     .contact{
-        width:350px;
+        width:340px;
         height:180px;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    padding: 10px;
         margin: auto;
@@ -71,12 +93,20 @@ img{
         color: blue;
     }
     .text{
-        font-family: Montserrat;
-        font-size: 200 px;
-        transition: transform .2s;
+        font-family: 'Roboto', sans-serif;
+        font-size: 25px;
+        text-align: center ;
+        margin: auto;
+        font-weight: bolder;
+        color: black
     }
     .text1{
-        font-family: 'Josefin Sans', sans-serif;
+        font-family: 'Roboto', sans-serif;
+        font-size: 25px;
+        text-align: center ;
+        margin: auto;
+        font-weight: bolder;
+        
     }
     .text:hover{
         transform: scale(1.1);
@@ -89,6 +119,7 @@ img{
         border-radius: 50%;
         outline: 5px solid black;
         outline-offset: -4px;
+        margin: auto;
     }
     
 }
@@ -103,21 +134,27 @@ img{
     }
     .contact{
         width:300px;
-        height:200px;
+        height:180px;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    padding: 10px;
         margin: auto;
     }
    
-    .a{
-        color: blue;
-    }
+    
     .text{
-        font-family: Montserrat;
-        font-size: 200 px;
-        transition: transform .2s;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        text-align: center ;
+        margin: auto;
+        font-weight: bold;
+        color: black
     }
     .text1{
-        font-family: Montserrat;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        text-align: center ;
+        margin: auto;
+        font-weight: bold;
+        
     }
     .text:hover{
         transform: scale(1.1);
@@ -130,5 +167,11 @@ img{
         border-radius: 50%;
         outline: 5px solid black;
         outline-offset: -4px;
+        margin: auto;
+    }
+    .sft{
+        font-family: Montserrat;
+        font-size: 25px;
+        font-weight: bolder;
     }
 }

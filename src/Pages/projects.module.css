@@ -3,238 +3,38 @@
     font-family: 'Josefin Sans', sans-serif;
 
 }
+.sft{
+    font-family: 'Josefin Sans', sans-serif;
 
-.aboutT{
-    max-width: 80%;
-    margin: auto;
-    /* font-weight: bolder; */
+    color:rgb(4, 52, 94)
+    
 }
-.projects{
-    background-image: linear-gradient(to top, #dbdcd7 0%, #dddcd7 24%, #e2c9cc 30%, #e7627d 46%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%);
-}
-.techLabel{}
+
+
 @media only screen and (min-width: 781px){
 .projects{
-}
-.tU{
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 25px;
-    margin-top: 25px;
-}
-.Pimg{
-    transition: transform .2s;
-    margin-top: 10px;
-    width:700px;
-    height:350px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    padding: 10px;
-
-}
-.Pimg:hover{
-    transform: scale(1.1);
-
-}
-.aboutT{
-    font-family: 'Roboto', sans-serif;
-    font-size: 30px;
-    text-align: justify ;
-    max-width: 80%;
-    margin: auto;
-}
-.project{
-    padding:10px;
     border: 2px solid;
-    width: 98%;
 }
-.link{
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-evenly;
-}
-.techDiv{
-    margin-top: 25px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-   
-}
-.techImg{
-    height: 50px;
-    width: 50px;
-    transition: transform 1s ease-in-out;
-    margin-bottom: 20px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    padding: 10px;
-
-}
-.techImg:hover{
-    transform: rotate(360deg);
-    cursor :pointer;
-}
-.link img{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    transition: transform .2s;
-    outline: 5px solid black;
-    outline-offset: -4px;
-}
-.pr{
-    margin-bottom: 15px;
-    color: black;
+.sft{
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: bolder;
 }
 
-.link img:hover{
-    cursor: pointer;
-    transform: scale(1.1);
-}
+
 }
 @media only screen and (min-width: 421px) and (max-width: 780px) {
-    .projects{
-    }
-    .Pimg{
-        transition: transform .2s;
-        margin-top: 10px;
-        width: 400px;;
-        height:300px;
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    padding: 10px;
-    
-    }
-    .Pimg:hover{
-        transform: scale(1.1);
-    
-    }
-    .aboutT{
+    .sft{
         font-family: Montserrat;
-        font-size: 25px;
-        text-align: justify ;
-    }
-    .project{
-        padding:10px;
-        border: 2px solid;
-    }
-    .link{
-        margin-top: 10px;
-        display: flex;
-        justify-content: space-evenly;
-    }
-    .techDiv{
-        margin-top: 30px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-    
-    }
-    .techImg{
-        height: 50px;
-        width: 50px;
-        transition: transform 1s ease-in-out;
-        margin-bottom: 20px;
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    padding: 10px;
-    
-    }
-    .techImg:hover{
-        transform: rotate(360deg);
-        cursor :pointer;
-    }
-    .link img{
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        transition: transform .2s;
-        outline: 5px solid black;
-        outline-offset: -4px;
-    }
-    
-    .link img:hover{
-        cursor: pointer;
-        transform: scale(1.1);
-    }
-    .pr{
-        margin-top: 20px;
-        margin-bottom: 10px;
-        color: black;
+        font-size: 30px;
+        font-weight: bolder;
     }
 }
 
 @media only screen and (min-width: 70px) and (max-width: 420px){
-    .Pimg{
-        height: 200px;
-        width: 300px;
-        transition: transform .2s;
-        margin-top: 10px;
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    padding: 10px;
-    }
-    
-    .aboutT{
-        font-family: Montserrat;
-        font-size: 20px;
-        text-align: justify ;
-        color: black;
-    }
-    .techImg{
-        transition: transform 1s ease-in-out;
-        margin-bottom: 20px;
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    padding: 10px;
-
-    }
-    .techImg:hover{
-        transform: rotate(360deg);
-        cursor :pointer;
-    }
-    .projects{
-    }
-    .Pimg:hover{
-        transform: scale(1.1);
-    
-    }
-    .about{
+    .sft{
         font-family: Montserrat;
         font-size: 25px;
-        text-align: justify ;
-    }
-    .project{
-        padding:10px;
-        border: 2px solid;
-    }
-    .link{
-        margin-top: 10px;
-        display: flex;
-        justify-content: space-evenly;
-    }
-    .techDiv{
-        margin-top: 30px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-    
-    }
-    .techImg{
-        height: 50px;
-        width: 50px;
-        transition: transform 1s ease-in-out;
-        margin-bottom: 20px;
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    padding: 10px;
-    
-    }
-    .techImg:hover{
-        transform: rotate(360deg);
-        cursor :pointer;
-    }
-    .link img{
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        transition: transform .2s;
-        outline: 5px solid black;
-        outline-offset: -4px;
-    }
-    
-    .link img:hover{
-        cursor: pointer;
-        transform: scale(1.1);
-    }
-    .pr{
-        margin-top: 20px;
-        margin-bottom: 10px;
-        color: black;
+        font-weight: bolder;
     }
 }

@@ -6,6 +6,7 @@
     font-size: 35px;
     font-family: 'Roboto';
     color: aliceblue;
+    align-items: center;
 }
 .foot{
     background:black;
@@ -14,6 +15,8 @@
 }
 
 .resume{
+    display: flex;
+    align-items: center;
     font-size: 25px;
 }
 .H{

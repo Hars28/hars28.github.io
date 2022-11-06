@@ -5,12 +5,15 @@ import {BrowserRouter} from "react-router-dom"
 import App from './App';
 
 import reportWebVitals from './reportWebVitals';
+import { ChakraProvider } from '@chakra-ui/react';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
+    <ChakraProvider>
     <App />
+    </ChakraProvider>
     </BrowserRouter>
   </React.StrictMode>
 );

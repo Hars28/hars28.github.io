@@ -1,0 +1,268 @@
+*{
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+@media only screen and (min-width: 781px){
+ .pname{
+    font-size: 35px;    
+    font-weight: bold;
+
+ }
+.tU{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 35px;
+    margin-top: 25px;
+    font-weight: bold;
+}
+.Pimg{
+    transition: transform .2s;
+    margin-top: 10px;
+    height: 300px;
+    width: 750px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    padding: 10px;
+    margin: auto;
+
+}
+.Pimg:hover{
+    transform: scale(1.1);
+
+}
+.aboutT{
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    text-align: justify ;
+    max-width: 80%;
+    margin: auto;
+    font-weight: bold;
+
+}
+.project{
+    padding:10px;
+    width: 95%;
+    
+}
+.link{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.techDiv{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+   
+}
+.techImg{
+    height: 50px;
+    width: 50px;
+    transition: transform 1s ease-in-out;
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    padding: 10px;
+
+}
+.techImg:hover{
+    transform: rotate(360deg);
+    cursor :pointer;
+}
+.link img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: transform .2s;
+    outline: 5px solid black;
+    outline-offset: -4px;
+}
+.pr{
+    margin-bottom: 15px;
+    color: black;
+}
+
+.link img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+}
+@media only screen and (min-width: 421px) and (max-width: 780px) {
+    .pname{
+        font-size: 30px;    
+        font-weight: bold;
+    
+     }
+     .Pimg{
+        transition: transform .2s;
+        margin-top: 10px;
+        height: 280px;
+        width: 450px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        padding: 10px;
+        margin: auto;
+    }
+    .tU{
+        font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+    margin-top: 25px;
+    font-weight: bold;
+    }
+   
+    .Pimg:hover{
+        transform: scale(1.1);
+    
+    }
+    .aboutT{
+        font-family: 'Roboto', sans-serif;
+        font-size: 25px;
+        text-align: justify ;
+        max-width: 80%;
+        margin: auto;
+        font-weight: bold;
+    }
+    .project{
+        padding:10px;
+    }
+    .link{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .techDiv{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    
+    }
+    .techImg{
+        height: 40px;
+        width: 40px;
+        transition: transform 1s ease-in-out;
+        margin-bottom: 20px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    padding: 10px;
+    
+    }
+    .techImg:hover{
+        transform: rotate(360deg);
+        cursor :pointer;
+    }
+    .link img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        transition: transform .2s;
+        outline: 5px solid black;
+        outline-offset: -4px;
+    }
+    
+    .link img:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+    .pr{
+        margin-top: 20px;
+        margin-bottom: 10px;
+        color: black;
+    }
+}
+
+@media only screen and (min-width: 70px) and (max-width: 420px){
+    .pname{
+        font-size: 25px;    
+        font-weight: bold;
+    
+     }
+    
+    .aboutT{
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        text-align: justify ;
+        color: black;
+        max-width: 90%;
+        margin: auto;
+        font-weight: bold;
+    }
+    .techImg{
+        height: 30px;
+        width: 30px;
+        transition: transform 1s ease-in-out;
+        margin-bottom: 20px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    padding: 10px;
+    
+    }
+    .techImg:hover{
+        transform: rotate(360deg);
+        cursor :pointer;
+    }
+    .projects{
+    }
+    .Pimg:hover{
+        transform: scale(1.1);
+    
+    }
+    .about{
+        font-family: Montserrat;
+        font-size: 25px;
+        text-align: justify ;
+
+    }
+    .project{
+        padding:10px;
+    }
+    .link{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .techDiv{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    
+    }
+    .techImg{
+        height: 30px;
+        width: 30px;
+        transition: transform 1s ease-in-out;
+        margin-bottom: 20px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    padding: 10px;
+    
+    }
+    .techImg:hover{
+        transform: rotate(360deg);
+        cursor :pointer;
+    }
+    .link img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        transition: transform .2s;
+        outline: 5px solid black;
+        outline-offset: -4px;
+    }
+    
+    .link img:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+    .pr{
+        margin-top: 20px;
+        margin-bottom: 10px;
+        color: black;
+    }
+    .Pimg{
+        transition: transform .2s;
+        margin-top: 10px;
+        height: 220px;
+        width: 300px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    padding: 10px;
+        margin: auto;
+
+    }
+    .tU{
+        font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
+    margin-top: 25px;
+    font-weight: bold;
+    }
+}
