@@ -29,7 +29,7 @@ const Choc = () => {
     setShowNavList(id)
   }
   return (
-    <React.Fragment>
+    <div style={{left:0,backgroundColor:"white",zIndex:1000, top:0, position:"sticky"}}>
       <chakra.header
         bg={bg}
         w="full"
@@ -61,10 +61,10 @@ const Choc = () => {
               color="brand.500"
               display={{ base: "none", md: "inline-flex" }}
             >
-              <a href="#home" onClick={()=>toggleNavList("#home")} style={showNavList==="#home"?{textDecoration:"underline",color:"blue"}:{textDecoration:""}}><Button variant="ghost">Home</Button></a>
-              <a href="#home" onClick={()=>toggleNavList("#skills")} style={showNavList==="#home"?{textDecoration:"underline",color:"blue"}:{textDecoration:""}}><Button variant="ghost">Skills</Button></a>
-              <a href="#home" onClick={()=>toggleNavList("#projects")} style={showNavList==="#home"?{textDecoration:"underline",color:"blue"}:{textDecoration:""}}><Button variant="ghost">Projects</Button></a>
-              <a href="#home" onClick={()=>toggleNavList("#contacts")} style={showNavList==="#home"?{textDecoration:"underline",color:"blue"}:{textDecoration:""}}><Button variant="ghost">Contact</Button></a>
+              <a href="#home" onClick={()=>toggleNavList("#home")} style={{textDecoration:"none"}}><Button variant="ghost">Home</Button></a>
+              <a href="#home" onClick={()=>toggleNavList("#skills")} style={{textDecoration:"none"}}><Button variant="ghost">Skills</Button></a>
+              <a href="#home" onClick={()=>toggleNavList("#projects")} style={{textDecoration:"none"}}><Button variant="ghost">Projects</Button></a>
+              <a href="#home" onClick={()=>toggleNavList("#contacts")} style={{textDecoration:"none"}}><Button variant="ghost">Contact</Button></a>
 
             </HStack>
            
@@ -111,7 +111,7 @@ const Choc = () => {
           </HStack>
         </Flex>
       </chakra.header>
-    </React.Fragment>
+      </div>
   );
 };
 export default Choc;
