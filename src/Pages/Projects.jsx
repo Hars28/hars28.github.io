@@ -39,7 +39,7 @@ const projects=[
 ]
 const Projects = () => {
   return (
-    <div className={Styles.projects}>
+    <div className={Styles.projects} id="#projects">
       
           <p className={Styles.sft}>
             MY PROJECTS

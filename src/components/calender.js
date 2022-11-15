@@ -1,9 +1,10 @@
+import { Image } from "@chakra-ui/react";
 import React from "react";
-// import './Calender.css'
 import GitHubCalendar from 'react-github-calendar';
 
 function Calendar() {
     return (
+      <>
       <div style={{ margin:"auto",width:"80%",  padding:"10px",display:"flex",justifyContent:"center", alignItems:"center"}}>
         
         <GitHubCalendar
@@ -15,6 +16,11 @@ function Calendar() {
           fontSize={25}
         />
       </div>
+      <div style={{ margin:"auto",width:"80%",  padding:"10px",display:"flex",justifyContent:"center", alignItems:"center"}}>
+                <Image src="https://github-readme-streak-stats.herokuapp.com/?user=Hars28" alt="git-stats"/>
+
+      </div>
+      </>
     );
   }
   export default Calendar;

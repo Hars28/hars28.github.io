@@ -11,12 +11,12 @@ import Contacts from './Pages/Contacts';
 function App() {
   return (
     <div className="App">
-      <Navbar/>
-      <Home/>
-      <Skills/>
-      <Projects/>
-      <Contacts/>
-      <Footer/>
+     <Navbar/>
+     <Home/>
+     <Skills/>
+     <Projects/>
+     <Contacts/>
+     <Footer/>
     </div>
   );
 }

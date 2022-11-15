@@ -31,7 +31,7 @@ const data=[
 
 const Home = () => {
   return (
-    <div className={Styles.home}>
+    <div className={Styles.home} id="#home">
       <div className={Styles.main}>
       {/* <div className={Styles.profile}> */}
         <Image src="https://i.ibb.co/yYtQGyD/IMG-20220904-202325-removebg-preview-1.png" 

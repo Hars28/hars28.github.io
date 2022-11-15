@@ -14,11 +14,20 @@ import {
   CloseButton,
 } from "@chakra-ui/react";
 import { AiOutlineMenu } from "react-icons/ai";
+import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const Choc = () => {
+  const [showNavList,setShowNavList] = useState("")
   const bg = useColorModeValue("white", "gray.800");
   const mobileNav = useDisclosure();
-
+  const toggleNavList = (id) =>{
+    let element = document.getElementById(id);
+    if(element){
+      element.scrollIntoView()
+    }
+    setShowNavList(id)
+  }
   return (
     <React.Fragment>
       <chakra.header
@@ -39,9 +48,11 @@ const Choc = () => {
               
               <VisuallyHidden>Harsh Singh</VisuallyHidden>
             </chakra.a>
+            <Link to="/">
             <chakra.h1 fontSize="xl" fontWeight="medium" ml="2">
             Harsh Singh
             </chakra.h1>
+            </Link>
           </Flex>
           <HStack display="flex" alignItems="center" spacing={1}>
             <HStack
@@ -50,14 +61,13 @@ const Choc = () => {
               color="brand.500"
               display={{ base: "none", md: "inline-flex" }}
             >
-              <Button variant="ghost">Home</Button>
-              <Button variant="ghost">Projects</Button>
-              <Button variant="ghost">Contact</Button>
-              
+              <a href="#home" onClick={()=>toggleNavList("#home")} style={showNavList==="#home"?{textDecoration:"underline",color:"blue"}:{textDecoration:""}}><Button variant="ghost">Home</Button></a>
+              <a href="#home" onClick={()=>toggleNavList("#skills")} style={showNavList==="#home"?{textDecoration:"underline",color:"blue"}:{textDecoration:""}}><Button variant="ghost">Skills</Button></a>
+              <a href="#home" onClick={()=>toggleNavList("#projects")} style={showNavList==="#home"?{textDecoration:"underline",color:"blue"}:{textDecoration:""}}><Button variant="ghost">Projects</Button></a>
+              <a href="#home" onClick={()=>toggleNavList("#contacts")} style={showNavList==="#home"?{textDecoration:"underline",color:"blue"}:{textDecoration:""}}><Button variant="ghost">Contact</Button></a>
+
             </HStack>
-            <Button colorScheme="brand" size="sm">
-              Get Started
-            </Button>
+           
             <Box display={{ base: "inline-flex", md: "none" }}>
               <IconButton
                 display={{ base: "flex", md: "none" }}
@@ -90,15 +100,11 @@ const Choc = () => {
                   onClick={mobileNav.onClose}
                 />
 
-                <Button w="full" variant="ghost">
-                  Home
-                </Button>
-                <Button w="full" variant="ghost">
-                  Projects
-                </Button>
-                <Button w="full" variant="ghost">
-                  About
-                </Button>
+              <a href="#home" onClick={()=>{toggleNavList("#home");mobileNav.onClose()}} style={showNavList==="#home"?{textDecoration:"underline",color:"blue"}:{textDecoration:""}}><Button variant="ghost">Home</Button></a>
+              <a href="#skills" onClick={()=>{toggleNavList("#skills");mobileNav.onClose()}} style={showNavList==="#home"?{textDecoration:"underline",color:"blue"}:{textDecoration:""}}><Button variant="ghost">Skills</Button></a>
+              <a href="#projects" onClick={()=>{toggleNavList("#projects");mobileNav.onClose()}} style={showNavList==="#home"?{textDecoration:"underline",color:"blue"}:{textDecoration:""}}><Button variant="ghost">Projects</Button></a>
+              <a href="#contacts" onClick={()=>{toggleNavList("#contacts");mobileNav.onClose()}} style={showNavList==="#home"?{textDecoration:"underline",color:"blue"}:{textDecoration:""}}><Button variant="ghost">Contact</Button></a>
+
                
               </VStack>
             </Box>
