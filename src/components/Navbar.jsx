@@ -14,8 +14,9 @@ import {
   CloseButton,
 } from "@chakra-ui/react";
 import { AiOutlineMenu } from "react-icons/ai";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
+import Resume from "../resume/Harsh_Singh_Resume.pdf"
 
 const Choc = () => {
   const [showNavList,setShowNavList] = useState("")
@@ -28,6 +29,10 @@ const Choc = () => {
     }
     setShowNavList(id)
   }
+  const openInNewTab = url => {
+    window.open(url, '_blank', 'noopener,noreferrer');
+  };
+  
   return (
     <div style={{left:0,backgroundColor:"white",zIndex:1000, top:0, position:"sticky"}}>
       <chakra.header
@@ -62,10 +67,10 @@ const Choc = () => {
               display={{ base: "none", md: "inline-flex" }}
             >
               <a href="#home" onClick={()=>toggleNavList("#home")} style={{textDecoration:"none"}}><Button variant="ghost">Home</Button></a>
-              <a href="#home" onClick={()=>toggleNavList("#skills")} style={{textDecoration:"none"}}><Button variant="ghost">Skills</Button></a>
-              <a href="#home" onClick={()=>toggleNavList("#projects")} style={{textDecoration:"none"}}><Button variant="ghost">Projects</Button></a>
-              <a href="#home" onClick={()=>toggleNavList("#contacts")} style={{textDecoration:"none"}}><Button variant="ghost">Contact</Button></a>
-
+              <a href="#skills" onClick={()=>toggleNavList("#skills")} style={{textDecoration:"none"}}><Button variant="ghost">Skills</Button></a>
+              <a href="#projects" onClick={()=>toggleNavList("#projects")} style={{textDecoration:"none"}}><Button variant="ghost">Projects</Button></a>
+              <a href="#contacts" onClick={()=>toggleNavList("#contacts")} style={{textDecoration:"none"}}><Button variant="ghost">Contact</Button></a>
+              <a href={Resume}  download="Harsh_Singh_Resume.pdf"><Button onClick={()=>openInNewTab("https://drive.google.com/file/d/10O048LcFUU0VNSw2L1K2ufaOBndOsgkZ/view?usp=share_link")} variant="ghost">Resume</Button></a>
             </HStack>
            
             <Box display={{ base: "inline-flex", md: "none" }}>
@@ -104,8 +109,8 @@ const Choc = () => {
               <a href="#skills" onClick={()=>{toggleNavList("#skills");mobileNav.onClose()}} style={showNavList==="#home"?{textDecoration:"underline",color:"blue"}:{textDecoration:""}}><Button variant="ghost">Skills</Button></a>
               <a href="#projects" onClick={()=>{toggleNavList("#projects");mobileNav.onClose()}} style={showNavList==="#home"?{textDecoration:"underline",color:"blue"}:{textDecoration:""}}><Button variant="ghost">Projects</Button></a>
               <a href="#contacts" onClick={()=>{toggleNavList("#contacts");mobileNav.onClose()}} style={showNavList==="#home"?{textDecoration:"underline",color:"blue"}:{textDecoration:""}}><Button variant="ghost">Contact</Button></a>
+              <a href={Resume} onClick={()=>mobileNav.onClose()} style={{textDecoration:"none"}} download="Harsh_Singh_Resume.pdf"><Button variant="ghost" onClick={()=>openInNewTab("https://drive.google.com/file/d/10O048LcFUU0VNSw2L1K2ufaOBndOsgkZ/view?usp=share_link")}>Resume</Button></a>
 
-               
               </VStack>
             </Box>
           </HStack>
