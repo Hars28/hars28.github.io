@@ -5,7 +5,7 @@ import {AiFillGithub} from "react-icons/ai"
 import {CgWebsite} from "react-icons/cg"
 const Project = ({item}) => {
   return (
-         <div key={item.src} className={Styles.project}>
+         <div key={item.src} className={Styles.project} >
         <p className={Styles.pname}>{item.name}</p>
         <div ><img className={Styles.Pimg} src={item.src} alt={item.name} />
         </div>

@@ -65,9 +65,10 @@ const Projects = () => {
         </SwiperSlide>
         
       </Swiper>
-     
+     <div>
+      <p className={Styles.tU}>Github Calender</p>
       <Calendar/>
-      
+     </div>
 
     </div>
   )

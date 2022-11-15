@@ -15,6 +15,12 @@
 .projects{
     border: 2px solid;
 }
+.tU{
+    font-family: 'Josefin Sans', sans-serif;
+font-size: 35px;
+margin-top: 25px;
+font-weight: bold;
+}
 .sft{
     font-family: Montserrat;
     font-size: 40px;
@@ -29,6 +35,12 @@
         font-size: 30px;
         font-weight: bolder;
     }
+    .tU{
+        font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+    margin-top: 25px;
+    font-weight: bold;
+    }
 }
 
 @media only screen and (min-width: 70px) and (max-width: 420px){
@@ -36,5 +48,11 @@
         font-family: Montserrat;
         font-size: 25px;
         font-weight: bolder;
+    }
+    .tU{
+        font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
+    margin-top: 25px;
+    font-weight: bold;
     }
 }

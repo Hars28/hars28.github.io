@@ -1,20 +1,111 @@
-import React from 'react'
-import Styles from "./Navbar.module.css"
-import Resume from "../resume/Harsh_Singh_Resume.pdf"
-import { Link } from 'react-router-dom'
-const Navbar = () => {
+import React from "react";
+
+import {
+  chakra,
+  Box,
+  Flex,
+  useColorModeValue,
+  VisuallyHidden,
+  HStack,
+  Button,
+  useDisclosure,
+  VStack,
+  IconButton,
+  CloseButton,
+} from "@chakra-ui/react";
+import { AiOutlineMenu } from "react-icons/ai";
+
+const Choc = () => {
+  const bg = useColorModeValue("white", "gray.800");
+  const mobileNav = useDisclosure();
+
   return (
-    <div className={Styles.nav}>
-      <div><span className={Styles.H}>H</span>arsh <span className={Styles.H}>S</span>ingh
-      </div>
-     <a href={Resume} download="Harsh_Singh_Resume.pdf">
-        <button className={Styles.resume}><img  style={{height:"20px",width:"20px"}} src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHsAAAB7CAMAAABjGQ9NAAAAXVBMVEX///8AAADt7e0wMDDIyMjn5+fc3Ny3t7cGBgbW1tbw8PAbGxvLy8vz8/Ovr69iYmKXl5dra2srKyt5eXlRUVF/f386OjogICAXFxfBwcGfn5+Hh4dxcXESEhJGRkbKk99EAAAB40lEQVRoge3a2ZLCIBAFULK7kLhG4xL//zNHq9xAMA00maqZex+niOdhvGDSEcI95SrRsyo9Pscj0w/5luko9sJoL8ag08xoZyls2LBhw4YNGzZs2LBhw4YNGzZs2LBhw4YN+1fsmcWeRbDqUo1cG+211NbV4fSym2gx0kmiL+uWwbRFoiQQT+cB9jzs62eehVETNjMrbf9dSiaBw0LzII6W0HGdZSehJHy3KXtPumcYz0pPW4bTQlRedMVB++0vwZvaIxtnesNFuzeNcxheb53oLcMZ9kphPjjNWRec9LXmDjb7exf0UyXCWxfUmjMVWw2t5mzFVtMS6DYOTal5vLdc6t0AvWMttoZ///k2j0hf95ivNvOeoif/QudxaSEaK93Epu01j1RsNeaaRyu2GlPNR3l97ZbPmu98P6puqvc0gy2d7TV6P3jzbTP00g7XtOyUC7rhE9tmpM62OCgXHIYv0O3HPYuHrdScUmxOWxyfy4+U5ay2ON1Xn0iree17zYnFZrbFuU/6M3Etty0KSV/KbTsENmzYsGH/LzvGtMlm6H+vZM4dqT+tsdljBDZs2H/fDhr++eV1J2V/bhUrb7fNQ89JufP+eKYIGfd6RDmli8uI8kX/gZC3/hNfl2Tt87HrDwxPIduVMiV2AAAAAElFTkSuQmCC" alt="resume"/>
-        Resume
-        </button>
-      </a>
+    <React.Fragment>
+      <chakra.header
+        bg={bg}
+        w="full"
+        px={{ base: 2, sm: 4 }}
+        py={4}
+        shadow="md"
+      >
+        <Flex alignItems="center" justifyContent="space-between" mx="auto">
+          <Flex>
+            <chakra.a
+              href="/"
+              title="Choc Home Page"
+              display="flex"
+              alignItems="center"
+            >
+              
+              <VisuallyHidden>Harsh Singh</VisuallyHidden>
+            </chakra.a>
+            <chakra.h1 fontSize="xl" fontWeight="medium" ml="2">
+            Harsh Singh
+            </chakra.h1>
+          </Flex>
+          <HStack display="flex" alignItems="center" spacing={1}>
+            <HStack
+              spacing={1}
+              mr={1}
+              color="brand.500"
+              display={{ base: "none", md: "inline-flex" }}
+            >
+              <Button variant="ghost">Home</Button>
+              <Button variant="ghost">Projects</Button>
+              <Button variant="ghost">Contact</Button>
+              
+            </HStack>
+            <Button colorScheme="brand" size="sm">
+              Get Started
+            </Button>
+            <Box display={{ base: "inline-flex", md: "none" }}>
+              <IconButton
+                display={{ base: "flex", md: "none" }}
+                aria-label="Open menu"
+                fontSize="20px"
+                color="gray.800"
+                _dark={{ color: "inherit" }}
+                variant="ghost"
+                icon={<AiOutlineMenu />}
+                onClick={mobileNav.onOpen}
+              />
 
-           </div>
-  )
-}
+              <VStack
+                pos="absolute"
+                top={0}
+                left={0}
+                right={0}
+                display={mobileNav.isOpen ? "flex" : "none"}
+                flexDirection="column"
+                p={2}
+                pb={4}
+                m={2}
+                bg={bg}
+                spacing={3}
+                rounded="sm"
+                shadow="sm"
+              >
+                <CloseButton
+                  aria-label="Close menu"
+                  onClick={mobileNav.onClose}
+                />
 
-export default Navbar
+                <Button w="full" variant="ghost">
+                  Home
+                </Button>
+                <Button w="full" variant="ghost">
+                  Projects
+                </Button>
+                <Button w="full" variant="ghost">
+                  About
+                </Button>
+               
+              </VStack>
+            </Box>
+          </HStack>
+        </Flex>
+      </chakra.header>
+    </React.Fragment>
+  );
+};
+export default Choc;
