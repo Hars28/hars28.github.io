@@ -30,11 +30,13 @@ const Skills = () => {
   ]
   
   return (
-    <div id="#skills">
+    <div id="#skills" style={{marginTop:"20px"}}>
+                <h2 className={Styles.sft}>SKILLS</h2>
+
       <h2 className={Styles.techLabel}>Some of the tech stacks that i've learned</h2>
     
     <KeyCarousel slides={data} />
-    <h2 className={Styles.techLabel}>Soft skills</h2>
+    <h2 style={{marginTop:"20px"}} className={Styles.techLabel}>Soft skills</h2>
 
       <div className={Styles.skills}>
 
