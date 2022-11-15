@@ -5,7 +5,7 @@ import GitHubCalendar from 'react-github-calendar';
 function Calendar() {
     return (
       <>
-      <div style={{color:"red", backgroundImage:"linear-gradient(to top, #30cfd0 0%, #330867 100%)", margin:"auto",width:"90%",  padding:"10px",display:"flex",justifyContent:"center", alignItems:"center"}}>
+      <div style={{color:"black", margin:"auto",width:"90%",  padding:"10px",display:"flex",justifyContent:"center", alignItems:"center"}}>
         
         <GitHubCalendar
           

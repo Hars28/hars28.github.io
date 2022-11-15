@@ -48,9 +48,9 @@ const projects=[
 ]
 const Projects = () => {
   return (
-    <div className={Styles.projects} id="#projects">
+    <div className={Styles.projects} >
       
-          <p className={Styles.sft}>
+          <p className={Styles.sft} id="#projects">
             MY PROJECTS
           </p>
           <Swiper
