@@ -1,7 +1,7 @@
 import React from 'react'
 import Styles from "./home.module.css"
 import TypeWriter from "typewriter-effect"
-import { Image } from '@chakra-ui/react'
+import { Box, Image, Text } from '@chakra-ui/react'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import  KeyCarousel from '../components/Slider';
@@ -36,10 +36,12 @@ const Home = () => {
   return (
     <div className={Styles.home} id="#home">
       <div className={Styles.main}>
+        {/* <Box border="2px solid"h={["50px","50px","50px","50px"]} w={["50px","50px","50px","50px"]}> */}
       {/* <div className={Styles.profile}> */}
-        <Image src="https://i.ibb.co/yYtQGyD/IMG-20220904-202325-removebg-preview-1.png" 
-      boxSize={["sm","md","md","xl"]} alt="Profile-Pic"/>
+        <Image h={["150px","160px","180px","240px"]} w={["150px","160px","180px","240px"]} src="https://i.ibb.co/yYtQGyD/IMG-20220904-202325-removebg-preview-1.png" 
+        alt="Profile-Pic"/>
       {/* </div> */}
+      {/* </Box> */}
       <div className={Styles.about1}>
       <TypeWriter
        options={{
@@ -60,10 +62,15 @@ const Home = () => {
       }}/> 
       </div>
     </div>
-    <h2 className={Styles.techLabel}>Some of the tech stacks that i've learned</h2>
+    <h2 className={Styles.techLabel}>About me</h2>
+    <Text as="i">Aspiring Full Stack Web Developer with a passion for developing
+scalable web applications and working across the full stack using
+various tools like HTML, CSS, Javascript, React, Redux and NodeJS.
+Always looking to enhance my knowledge by working and
+experiencing various hurdles coming on the way. Looking to continue
+growing my skillset and keep contributing to the betterment of the
+community.</Text>
     
-    <KeyCarousel slides={data} />
-
     </div>
   )
 }
