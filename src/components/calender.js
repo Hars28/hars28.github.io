@@ -5,19 +5,20 @@ import GitHubCalendar from 'react-github-calendar';
 function Calendar() {
     return (
       <>
-      <div style={{ margin:"auto",width:"80%",  padding:"10px",display:"flex",justifyContent:"center", alignItems:"center"}}>
+      <div style={{color:"red", backgroundImage:"linear-gradient(to top, #30cfd0 0%, #330867 100%)", margin:"auto",width:"90%",  padding:"10px",display:"flex",justifyContent:"center", alignItems:"center"}}>
         
         <GitHubCalendar
-          border="5px solid"
+          
           username="hars28"
-          blockSize={25}
+          blockSize={15}
           blockMargin={5}
-          color="rgb(10,120,219)"
-          fontSize={25}
+          color="green"
+          // fontSize={15}
+          
         />
       </div>
-      <div style={{ margin:"auto",width:"80%",  padding:"10px",display:"flex",justifyContent:"center", alignItems:"center"}}>
-                <Image src="https://github-readme-streak-stats.herokuapp.com/?user=Hars28" alt="git-stats"/>
+      <div style={{  padding:"10px",display:"flex",justifyContent:"center", alignItems:"center"}}>
+                <Image objectFit="cover"  src="https://github-readme-streak-stats.herokuapp.com/?user=Hars28" alt="git-stats"/>
 
       </div>
       </>

@@ -2,6 +2,9 @@ import React from 'react'
 import Styles from "./home.module.css"
 import TypeWriter from "typewriter-effect"
 import { Image } from '@chakra-ui/react'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import  KeyCarousel from '../components/Slider';
 const data=[
   {
     name:"HTML",
@@ -57,12 +60,8 @@ const Home = () => {
       </div>
     </div>
     <h2 className={Styles.techLabel}>Some of the tech stacks that i've learned</h2>
-    <div className={Styles.techStacks}>
-      {data.map((e=><div key={e.img} style={{display:"flex",alignItems:"center",marginTop:"10px"}}>
-        <img src={e.img} alt={e.img}/>
-        <p className={Styles.tname}>{e.name}</p>        
-      </div>))}
-    </div>
+    
+    <KeyCarousel slides={data} />
 
     </div>
   )

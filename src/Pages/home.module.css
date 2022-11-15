@@ -10,6 +10,9 @@
     font-family: 'Josefin Sans', sans-serif;
 
 }
+.home{
+    margin-top: -80px;
+}
 @media (min-width: 781px) {
     .tname{
         font-family: 'Roboto', sans-serif;

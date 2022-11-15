@@ -12,6 +12,7 @@ import {
   VStack,
   IconButton,
   CloseButton,
+  Text,
 } from "@chakra-ui/react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { Link, useNavigate } from "react-router-dom";
@@ -34,13 +35,14 @@ const Choc = () => {
   };
   
   return (
-    <div style={{left:0,backgroundColor:"white",zIndex:1000, top:0, position:"sticky"}}>
+    <div style={{left:0,zIndex:1000, top:0, position:"sticky"}}>
       <chakra.header
         bg={bg}
         w="full"
         px={{ base: 2, sm: 4 }}
         py={4}
         shadow="md"
+        background="-webkit-linear-gradient(360deg, #dee1e1 10%, #f4f4f4 360%)"
       >
         <Flex alignItems="center" justifyContent="space-between" mx="auto">
           <Flex>
@@ -54,9 +56,9 @@ const Choc = () => {
               <VisuallyHidden>Harsh Singh</VisuallyHidden>
             </chakra.a>
             <Link to="/">
-            <chakra.h1 fontSize="xl" fontWeight="medium" ml="2">
+            <Text as = "b" fontFamily="fantasy" fontSize={["20px","20px","25px","25px"]}>
             Harsh Singh
-            </chakra.h1>
+            </Text>
             </Link>
           </Flex>
           <HStack display="flex" alignItems="center" spacing={1}>
@@ -105,10 +107,10 @@ const Choc = () => {
                   onClick={mobileNav.onClose}
                 />
 
-              <a href="#home" onClick={()=>{toggleNavList("#home");mobileNav.onClose()}} style={showNavList==="#home"?{textDecoration:"underline",color:"blue"}:{textDecoration:""}}><Button variant="ghost">Home</Button></a>
-              <a href="#skills" onClick={()=>{toggleNavList("#skills");mobileNav.onClose()}} style={showNavList==="#home"?{textDecoration:"underline",color:"blue"}:{textDecoration:""}}><Button variant="ghost">Skills</Button></a>
-              <a href="#projects" onClick={()=>{toggleNavList("#projects");mobileNav.onClose()}} style={showNavList==="#home"?{textDecoration:"underline",color:"blue"}:{textDecoration:""}}><Button variant="ghost">Projects</Button></a>
-              <a href="#contacts" onClick={()=>{toggleNavList("#contacts");mobileNav.onClose()}} style={showNavList==="#home"?{textDecoration:"underline",color:"blue"}:{textDecoration:""}}><Button variant="ghost">Contact</Button></a>
+              <a href="#home" onClick={()=>{toggleNavList("#home");mobileNav.onClose()}} style={{textDecoration:"none"}}><Button variant="ghost">Home</Button></a>
+              <a href="#skills" onClick={()=>{toggleNavList("#skills");mobileNav.onClose()}} style={{textDecoration:"none"}}><Button variant="ghost">Skills</Button></a>
+              <a href="#projects" onClick={()=>{toggleNavList("#projects");mobileNav.onClose()}} style={{textDecoration:"none"}}><Button variant="ghost">Projects</Button></a>
+              <a href="#contacts" onClick={()=>{toggleNavList("#contacts");mobileNav.onClose()}} style={{textDecoration:"none"}}><Button variant="ghost">Contact</Button></a>
               <a href={Resume} onClick={()=>mobileNav.onClose()} style={{textDecoration:"none"}} download="Harsh_Singh_Resume.pdf"><Button variant="ghost" onClick={()=>openInNewTab("https://drive.google.com/file/d/10O048LcFUU0VNSw2L1K2ufaOBndOsgkZ/view?usp=share_link")}>Resume</Button></a>
 
               </VStack>
