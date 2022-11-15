@@ -45,6 +45,7 @@ const Home = () => {
        options={{
         autoStart: true,
         loop: true,
+        
        }}
         onInit={(typewriter)=>{
         typewriter.typeString("Hello everyone!")

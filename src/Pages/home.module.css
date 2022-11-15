@@ -2,10 +2,8 @@
     color: rgb(4, 52, 94);
 }
 .main{
-    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
-    
 }
-
+/* background-image: linear-gradient( 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% ); */
 *{
     font-family: 'Josefin Sans', sans-serif;
 
@@ -42,8 +40,10 @@
 .about1{
     font-family: 'Josefin Sans', sans-serif;
     font-size: 50px;
+    color:black;
     text-align: justify ;
 }
+
 .image{
     height: 300px;
     width: 300px;
@@ -99,10 +99,9 @@
         justify-content: flex-start;
         gap: 20px;
         text-align: justify ;
-        color: aliceblue;
-        border: 5px solid;
     }
     .about1{
+        color:black;
         font-family: Montserrat;
         font-size: 40px;
         margin-top: 10px;
@@ -156,7 +155,6 @@
         align-items: center;
         flex-direction: column;
         text-align: justify ;
-        color: aliceblue;
 
     }
     .sft{
