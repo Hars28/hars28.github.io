@@ -42,7 +42,8 @@ const Choc = () => {
         px={{ base: 2, sm: 4 }}
         py={4}
         shadow="md"
-        background="-webkit-linear-gradient(360deg, #dee1e1 10%, #f4f4f4 360%)"
+        backgroundColor="black"
+        
       >
         <Flex alignItems="center" justifyContent="space-between" mx="auto">
           <Flex>
@@ -56,7 +57,7 @@ const Choc = () => {
               <VisuallyHidden>Harsh Singh</VisuallyHidden>
             </chakra.a>
             <Link to="/">
-            <Text as = "b" fontFamily="fantasy" fontSize={["20px","20px","25px","25px"]}>
+            <Text as = "b" color="white" fontFamily="fantasy" fontSize={["20px","20px","25px","25px"]}>
             Harsh Singh
             </Text>
             </Link>
@@ -68,11 +69,11 @@ const Choc = () => {
               color="brand.500"
               display={{ base: "none", md: "inline-flex" }}
             >
-              <a href="#home" onClick={()=>toggleNavList("#home")} style={{textDecoration:"none"}}><Button variant="ghost">Home</Button></a>
-              <a href="#skills" onClick={()=>toggleNavList("#skills")} style={{textDecoration:"none"}}><Button variant="ghost">Skills</Button></a>
-              <a href="#projects" onClick={()=>toggleNavList("#projects")} style={{textDecoration:"none"}}><Button variant="ghost">Projects</Button></a>
-              <a href="#contacts" onClick={()=>toggleNavList("#contacts")} style={{textDecoration:"none"}}><Button variant="ghost">Contact</Button></a>
-              <a href={Resume}  download="Harsh_Singh_Resume.pdf"><Button onClick={()=>openInNewTab("https://drive.google.com/file/d/10O048LcFUU0VNSw2L1K2ufaOBndOsgkZ/view?usp=share_link")} variant="ghost">Resume</Button></a>
+              <a href="#home" onClick={()=>toggleNavList("#home")} style={{textDecoration:"none"}}><Button variant="ghost" color="white">Home</Button></a>
+              <a href="#skills" onClick={()=>toggleNavList("#skills")} style={{textDecoration:"none"}}><Button variant="ghost" color="white">Skills</Button></a>
+              <a href="#projects" onClick={()=>toggleNavList("#projects")} style={{textDecoration:"none"}}><Button variant="ghost" color="white">Projects</Button></a>
+              <a href="#contacts" onClick={()=>toggleNavList("#contacts")} style={{textDecoration:"none"}}><Button variant="ghost" color="white">Contact</Button></a>
+              <a href={Resume}  download="Harsh_Singh_Resume.pdf"><Button color="white" onClick={()=>openInNewTab("https://drive.google.com/file/d/10O048LcFUU0VNSw2L1K2ufaOBndOsgkZ/view?usp=share_link")} variant="ghost">Resume</Button></a>
             </HStack>
            
             <Box display={{ base: "inline-flex", md: "none" }}>
@@ -80,7 +81,7 @@ const Choc = () => {
                 display={{ base: "flex", md: "none" }}
                 aria-label="Open menu"
                 fontSize="20px"
-                color="gray.800"
+                color="white"
                 _dark={{ color: "inherit" }}
                 variant="ghost"
                 icon={<AiOutlineMenu />}
