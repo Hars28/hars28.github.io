@@ -30,8 +30,8 @@ const Skills = () => {
   ]
   
   return (
-    <div id="#skills" style={{marginTop:"20px"}}>
-                <h2 className={Styles.sft}>SKILLS</h2>
+    <div  style={{marginTop:"20px"}}>
+                <h2 id="#skills" className={Styles.sft}>SKILLS</h2>
 
       <h2 className={Styles.techLabel}>Some of the tech stacks that i've learned</h2>
     

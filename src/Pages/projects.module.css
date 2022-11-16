@@ -12,8 +12,9 @@
 
 
 @media only screen and (min-width: 781px){
-.projects{
-}
+    .projects{
+        margin-top: 20px;
+            }
 .tU{
     font-family: 'Josefin Sans', sans-serif;
 font-size: 35px;
@@ -40,9 +41,15 @@ font-weight: bold;
     margin-top: 25px;
     font-weight: bold;
     }
+    .projects{
+        margin-top: 20px;
+            }
 }
 
 @media only screen and (min-width: 70px) and (max-width: 420px){
+    .projects{
+margin-top: 20px;
+    }
     .sft{
         font-family: Montserrat;
         font-size: 25px;
