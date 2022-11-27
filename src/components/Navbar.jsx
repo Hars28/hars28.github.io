@@ -111,7 +111,7 @@ const Choc = () => {
               <a href="#skills" onClick={()=>{toggleNavList("#skills");mobileNav.onClose()}} style={{textDecoration:"none"}}><Button variant="ghost">Skills</Button></a>
               <a href="#projects" onClick={()=>{toggleNavList("#projects");mobileNav.onClose()}} style={{textDecoration:"none"}}><Button variant="ghost">Projects</Button></a>
               <a href="#contacts" onClick={()=>{toggleNavList("#contacts");mobileNav.onClose()}} style={{textDecoration:"none"}}><Button variant="ghost">Contact</Button></a>
-              <a href={Resume} onClick={()=>mobileNav.onClose()} style={{textDecoration:"none"}} download="Harsh_Singh_Resume.pdf">Resume</a>
+              <a href={Resume} onClick={()=>mobileNav.onClose()} style={{textDecoration:"none"}} download="Harsh_Singh_Resume.pdf"><Button  onClick={()=>openInNewTab("https://drive.google.com/file/d/10O048LcFUU0VNSw2L1K2ufaOBndOsgkZ/view?usp=share_link")} variant="ghost">Resume</Button></a>
 
               </VStack>
             </Box>
