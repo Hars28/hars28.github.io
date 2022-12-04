@@ -11,7 +11,6 @@ const Contacts = () => {
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt75aZzf58_Ni304EB_UDtyoXzqz0Z34FFPw&usqp=CAU" alt="mobile" className={Styles.mobile}/>
           <Text as="b" fontSize={["18px","18px","20px","22px"]} fontFamily="sans-serif">phone</Text>
           <Box><a style={{textDecoration:"none"}}>
-            
           <Text as="b" cursor="pointer" fontSize={["18px","18px","20px","22px"]} fontFamily="sans-serif">+91-8085509055</Text>
           </a>
           </Box>
@@ -20,7 +19,7 @@ const Contacts = () => {
           <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIMAAACDCAMAAACZQ1hUAAAAYFBMVEX///8AAADBwcHExMTx8fE8PDz19fVMTEycnJxRUVGCgoL8/Pz4+PjHx8cFBQUUFBTh4eFnZ2fq6uqQkJBdXV3T09NFRUUODg6rq6sZGRlwcHCzs7M2NjYtLS0nJyd6enqj0Vw9AAAErUlEQVR4nO2bC3OrLBCGxWvUpInNtU3a8///5RcWTQQWXBAbZr68M2fOTKv2kd13uQhJ8tZbb70VVvnumK6ariq4qq5Zpcdd/od/v9zsu9MHU/Vx6vab8i8AjvtK++tjVfvjwgDN2QogdG4Ww8gvNQFAqL4skRz56otMwPW1Ck2RN04AQk1Iiny19UBgbBuuLdLCi4CrSIMQ5N/eBFzfAZriSnGjTefrTILSJxdVNbOK5ye9IthUf/ojbIIQcG18Ea7BEBjzTIpVQATGVj4I+6AIjO1fj+ABETYQQo7hCJmOTzklZjhTynKw6OdCCIyRi1UZpjpiqqllO0QfYVJDQ1gmHweR8jKf21nbdaaMJ+YNWab1PY2QLozA2OTwLvcfO1JVTEVjiRqtaqJm536DeDdt7Q2xZGl4ylok8j9BYMzWEEg26OsMrkKeYMmIHJnWbq9ZOkfZFUmxL3NDXLDXqOYtrZToksnFeL3eX/7e/xXrGQjron+KrNp0/VHnTQ8covVGaDnCAam9ppUaxJgbaJubbzjKG7wzMiwz2RPpMLOk7e7/nfwmz/npfm/XJpn+4DN+BxKKO0Oy5uG4+SC0vBUO92xCGAzBwGYUGf8FD4dHYkI6QvJhDPhsAzMRMCSQmK7hgB74kJgYKuyeErmwZ1h37i0BrdCtjQwMy3N0TiEYkhbC4WJRMGXd34EyYHMNdIKZDb91tGguTJlYGLCE6KwMbhYdTGlj6Ay3mRl6i9LC8TCljQF5oR3aSWejK8gWfZrSxvCx027EKpTMQLXoyJQ2BqRK4WN6iQEseppKzBJyQWovnEEf4+MDaomBZFHJlFYGfTCFj2Yz5SqAsLVEKZnSyqB3nag1NYYpiyqmtDLo5sS/UqkMwqLGcIghi+YdnEHvMfA5nsZgtahmSitD4c9gtqhuysUYSn4pYlEw5a9eeZZg+CeeoOZEK55QIWEKzjCskSgWLQv85y4MRF9AK/x8ahYVpoRcqbQFQKovaPUBStltp1l0MGXLf16rCUutD7Q6yQMBaSeX7VGBxuoHtU5S+gtA+OnfcmRRyZQHNUz0/oLQb4pADNFuH71oKRdoCIeUE9R+kzB+gHR8+r/tm13kQiv/XJqtU8cP0+MoCIT0fjwnTjveCnKBBrgRBHUcNTWehFb4leMMb3yWW+EBMQoHdTw5Ma4GhJuKvhY3dWptVCxKHVdPzC8eplRUa4F4QjwKIXl+YZtnSaaUdUB7Stmi5HmWZb4pm1LWem8Y7o9ygjzftMy7FVPSNLIoed5tXn/QTUnTw6L09QfDOgxmSgcI3ovS12Hw9aihp/TRYFH6ehTWdWZGU9IhCpd1OSQYG0jHGVtaIBzIVzrjTjJ9nZZ3RwZTOkDoy+DGdVp8vbqYhWDoA8zr1di6Pbts5q3bpz/6My3r9jF8v4jiO04M37Oi+K4Xw/fNKL7zxvC9O4rv/lHsf4hhH0gU+2Gi2BcUw/6oKPaJRbFfLop9g1Hsn4xiH2kU+2mj2Fccxf7qKPaZR7HfPonh3EESxfmLJIZzKEkU53GSGM4lAcXLz2cBxcvPqYFefl6vx3j1uUWhl5/f7PXqc6xvvfXW/0P/Ae9xRRVOD+GpAAAAAElFTkSuQmCC" alt="email" className={Styles.mobile}/>
           <Text as="b" fontSize={["18px","18px","20px","22px"]} fontFamily="sans-serif">email</Text>
           <Box><a style={{textDecoration:"none"}} href = "mailto: harsh.singh9055@gmail.com">
-          <Text as="b" fontSize={["18px","18px","20px","22px"]} fontFamily="sans-serif">harsh.singh9055@gmail.com</Text>
+          <Text as="b" fontSize={["16px","18px","20px","22px"]} fontFamily="sans-serif">harsh.singh9055@gmail.com</Text>
           </a>
           </Box>
           </div>
