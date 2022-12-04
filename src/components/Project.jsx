@@ -4,6 +4,9 @@ import Styles from "./Project.module.css"
 import {AiFillGithub} from "react-icons/ai"
 import {CgWebsite} from "react-icons/cg"
 const Project = ({item}) => {
+  const openInNewTab = url => {
+    window.open(url, '_blank', 'noopener,noreferrer');
+  };
   return (
          <div key={item.src} className={Styles.project} >
         <Text fontFamily="sans-serif" fontSize={["20px","22px","24px","24px"]} as="b">{item.name}</Text>
@@ -22,18 +25,14 @@ const Project = ({item}) => {
         
         <div className={Styles.link}>
             
-          <a href={item.git} style={{textDecoration:"none"}}>
-          <Button leftIcon={<AiFillGithub />} textAlign="center" background='black' color="white" variant='solid'>
+          <Button onClick={()=>openInNewTab(item.git)} leftIcon={<AiFillGithub />} textAlign="center" background='black' color="white" variant='solid'>
             
            Github
           </Button>
-          </a>
-          <a href={item.netlify}>
-          <Button  bg="black" color="white" leftIcon={<CgWebsite/>} variant='solid'>
+          <Button onClick={()=>openInNewTab(item.netlify)} bg="black" color="white" leftIcon={<CgWebsite/>} variant='solid'>
            Live
           </Button>
           
-          </a>
         </div>
       </div>
   )
