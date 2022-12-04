@@ -63,13 +63,13 @@ const Home = () => {
       }}/> 
       </div>
     </div>
-    <h2 className={Styles.techLabel}>About me</h2>
-    <Box w={["80%","80%","70%","70%"]} m="auto"><Text align="justify"  fontSize={["md","md","lg","xl"]} as="i">Aspiring Full Stack Web Developer with a passion for developing
-scalable web applications and working across the full stack using
+    <Text color="blue" as="b" fontSize={["20px","20px","25px","25px"]}>ABOUT ME . . . </Text>
+    <Box w={["80%","80%","70%","70%"]} m="auto"><Text align="justify"  fontSize={["18px","20px","22px","22px"]} as="i">Aspiring Full Stack Web Developer with a passion for developing
+scalable web applications and working across the full stack, using
 various tools like HTML, CSS, Javascript, React, Redux and NodeJS.
 Always looking to enhance my knowledge by working and
 experiencing various hurdles coming on the way. Looking to continue
-growing my skillset and keep contributing to the betterment of the
+growing my skillset and keep contributing for the betterment of the
 community.</Text>
 </Box>
     </div>

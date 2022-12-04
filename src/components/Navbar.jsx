@@ -68,11 +68,11 @@ const Choc = () => {
               color="brand.500"
               display={{ base: "none", md: "inline-flex" }}
             >
-              <a href="#home" onClick={()=>toggleNavList("#home")} style={{textDecoration:"none"}}><Button variant="ghost" color="white">Home</Button></a>
-              <a href="#skills" onClick={()=>toggleNavList("#skills")} style={{textDecoration:"none"}}><Button variant="ghost" color="white">Skills</Button></a>
-              <a href="#projects" onClick={()=>toggleNavList("#projects")} style={{textDecoration:"none"}}><Button variant="ghost" color="white">Projects</Button></a>
-              <a href="#contacts" onClick={()=>toggleNavList("#contacts")} style={{textDecoration:"none"}}><Button variant="ghost" color="white">Contact</Button></a>
-              <a href={Resume}  download="Harsh_Singh_Resume.pdf"><Button color="white" onClick={()=>openInNewTab("https://drive.google.com/file/d/10O048LcFUU0VNSw2L1K2ufaOBndOsgkZ/view?usp=share_link")} variant="ghost">Resume</Button></a>
+              <a href="#home" onClick={()=>toggleNavList("#home")} style={{textDecoration:"none"}}><Button fontSize={["sm","md","lg","xl"]} variant="ghost" color="white">Home</Button></a>
+              <a href="#skills" onClick={()=>toggleNavList("#skills")} style={{textDecoration:"none"}}><Button variant="ghost" fontSize={["sm","md","lg","xl"]} color="white">Skills</Button></a>
+              <a href="#projects" onClick={()=>toggleNavList("#projects")} style={{textDecoration:"none"}}><Button variant="ghost" color="white" fontSize={["sm","md","lg","xl"]}>Projects</Button></a>
+              <a href="#contacts" onClick={()=>toggleNavList("#contacts")} style={{textDecoration:"none"}}><Button variant="ghost" color="white" fontSize={["sm","md","lg","xl"]}>Contact</Button></a>
+              <a href={Resume}  download="Harsh_Singh_Resume.pdf"><Button color="white" fontSize={["sm","md","lg","xl"]} onClick={()=>openInNewTab("https://drive.google.com/file/d/10O048LcFUU0VNSw2L1K2ufaOBndOsgkZ/view?usp=share_link")} variant="ghost">Resume</Button></a>
             </HStack>
            
             <Box display={{ base: "inline-flex", md: "none" }}>
@@ -107,11 +107,11 @@ const Choc = () => {
                   onClick={mobileNav.onClose}
                 />
 
-              <a href="#home" onClick={()=>{toggleNavList("#home");mobileNav.onClose()}} style={{textDecoration:"none"}}><Button variant="ghost">Home</Button></a>
-              <a href="#skills" onClick={()=>{toggleNavList("#skills");mobileNav.onClose()}} style={{textDecoration:"none"}}><Button variant="ghost">Skills</Button></a>
-              <a href="#projects" onClick={()=>{toggleNavList("#projects");mobileNav.onClose()}} style={{textDecoration:"none"}}><Button variant="ghost">Projects</Button></a>
-              <a href="#contacts" onClick={()=>{toggleNavList("#contacts");mobileNav.onClose()}} style={{textDecoration:"none"}}><Button variant="ghost">Contact</Button></a>
-              <a href={Resume} onClick={()=>mobileNav.onClose()} style={{textDecoration:"none"}} download="Harsh_Singh_Resume.pdf"><Button  onClick={()=>openInNewTab("https://drive.google.com/file/d/10O048LcFUU0VNSw2L1K2ufaOBndOsgkZ/view?usp=share_link")} variant="ghost">Resume</Button></a>
+              <a href="#home" onClick={()=>{toggleNavList("#home");mobileNav.onClose()}} style={{textDecoration:"none"}}><Button variant="ghost" fontSize={["sm","md","lg","xl"]}>Home</Button></a>
+              <a href="#skills" onClick={()=>{toggleNavList("#skills");mobileNav.onClose()}} style={{textDecoration:"none"}}><Button variant="ghost" fontSize={["sm","md","lg","xl"]}>Skills</Button></a>
+              <a href="#projects" onClick={()=>{toggleNavList("#projects");mobileNav.onClose()}} style={{textDecoration:"none"}}><Button variant="ghost" fontSize={["sm","md","lg","xl"]}>Projects</Button></a>
+              <a href="#contacts" onClick={()=>{toggleNavList("#contacts");mobileNav.onClose()}} style={{textDecoration:"none"}}><Button variant="ghost" fontSize={["sm","md","lg","xl"]}>Contact</Button></a>
+              <a href={Resume} onClick={()=>mobileNav.onClose()} style={{textDecoration:"none"}} download="Harsh_Singh_Resume.pdf"><Button fontSize={["sm","md","lg","xl"]} onClick={()=>openInNewTab("https://drive.google.com/file/d/10O048LcFUU0VNSw2L1K2ufaOBndOsgkZ/view?usp=share_link")} variant="ghost">Resume</Button></a>
 
               </VStack>
             </Box>

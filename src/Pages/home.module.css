@@ -40,9 +40,9 @@
 }
 .about1{
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 50px;
+    font-size: 40px;
     color:black;
-    text-align: justify ;
+    text-align: center ;
 }
 
 .image{
@@ -105,7 +105,7 @@
     .about1{
         color:black;
         font-family: Montserrat;
-        font-size: 40px;
+        font-size: 35px;
         margin-top: 10px;
         text-justify: auto;
     }
@@ -165,9 +165,11 @@
     }
     .about1{
         font-family: Montserrat;
-        font-size: 40px;
+        font-size: 28px;
         margin-top: 10px;
-        text-justify: center;
+        text-align: center;
+        display: inline-block;
+        white-space: nowrap;
     }
     
     .image{
