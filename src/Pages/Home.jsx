@@ -5,6 +5,7 @@ import { Box, Image, Text } from '@chakra-ui/react'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import  KeyCarousel from '../components/Slider';
+import pro from "../resume/pro.png"
 const data=[
   {
     name:"HTML",
@@ -39,8 +40,10 @@ const Home = () => {
       <div className={Styles.main}>
         {/* <Box border="2px solid"h={["50px","50px","50px","50px"]} w={["50px","50px","50px","50px"]}> */}
       {/* <div className={Styles.profile}> */}
-        <Image h={["150px","160px","180px","240px"]} w={["150px","160px","180px","240px"]} src="https://i.ibb.co/yYtQGyD/IMG-20220904-202325-removebg-preview-1.png" 
-        alt="Profile-Pic"/>
+      <Box mt={["60px","70px","70px","80px"]}>
+        <Image h={["150px","160px","180px","240px"]} w={["150px","160px","180px","240px"]} src={pro}
+        alt="Profile-Pic" />
+        </Box>
       {/* </div> */}
       {/* </Box> */}
       <div className={Styles.about1}>
