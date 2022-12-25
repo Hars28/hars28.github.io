@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.d7278852.css",
-    "main.js": "/static/js/main.da1ba5e1.js",
+    "main.js": "/static/js/main.325af5df.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
-    "static/media/Harsh_Singh_Resume.pdf": "/static/media/Harsh_Singh_Resume.fe03c1ed9aa87bbb7c34.pdf",
+    "static/media/Harsh_Singh_Resume.pdf": "/static/media/Harsh_Singh_Resume.a6ad5773aabc036c5e50.pdf",
     "static/media/profile1.jpg": "/static/media/profile1.3ab6566bf3a63cd83e45.jpg",
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -12,11 +12,11 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "main.d7278852.css.map": "/static/css/main.d7278852.css.map",
-    "main.da1ba5e1.js.map": "/static/js/main.da1ba5e1.js.map",
+    "main.325af5df.js.map": "/static/js/main.325af5df.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d7278852.css",
-    "static/js/main.da1ba5e1.js"
+    "static/js/main.325af5df.js"
   ]
 }
